@@ -1,5 +1,5 @@
 Timing Analyzer report for PalletizerSim
-Tue Oct 13 13:11:12 2026
+Tue Oct 13 13:40:51 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -104,26 +104,26 @@ Parallel compilation attempted to use more processors than were available, which
 ; Number detected on machine   ; 12          ;
 ; Maximum allowed              ; 16          ;
 ;                              ;             ;
-; Average used                 ; 1.57        ;
+; Average used                 ; 1.71        ;
 ; Maximum used                 ; 16          ;
 ;                              ;             ;
 ; Usage by Processor           ; % Time Used ;
 ;     Processor 1              ; 100.0%      ;
-;     Processor 2              ;   4.2%      ;
-;     Processor 3              ;   4.1%      ;
-;     Processor 4              ;   4.0%      ;
-;     Processor 5              ;   3.8%      ;
-;     Processor 6              ;   3.8%      ;
-;     Processor 7              ;   3.8%      ;
-;     Processor 8              ;   3.8%      ;
-;     Processor 9              ;   3.8%      ;
-;     Processor 10             ;   3.8%      ;
-;     Processor 11             ;   3.7%      ;
-;     Processor 12             ;   3.7%      ;
-;     Processors 13 (overused) ;   3.7%      ;
-;     Processors 14 (overused) ;   3.7%      ;
-;     Processors 15 (overused) ;   3.7%      ;
-;     Processors 16 (overused) ;   3.7%      ;
+;     Processor 2              ;   5.2%      ;
+;     Processor 3              ;   5.1%      ;
+;     Processor 4              ;   4.9%      ;
+;     Processor 5              ;   4.7%      ;
+;     Processor 6              ;   4.7%      ;
+;     Processor 7              ;   4.7%      ;
+;     Processor 8              ;   4.7%      ;
+;     Processor 9              ;   4.7%      ;
+;     Processor 10             ;   4.7%      ;
+;     Processor 11             ;   4.7%      ;
+;     Processor 12             ;   4.6%      ;
+;     Processors 13 (overused) ;   4.6%      ;
+;     Processors 14 (overused) ;   4.6%      ;
+;     Processors 15 (overused) ;   4.6%      ;
+;     Processors 16 (overused) ;   4.6%      ;
 +------------------------------+-------------+
 
 
@@ -132,7 +132,7 @@ Parallel compilation attempted to use more processors than were available, which
 +-------------------+--------+--------------------------+
 ; SDC File Path     ; Status ; Read at                  ;
 +-------------------+--------+--------------------------+
-; PalletizerSim.sdc ; OK     ; Tue Oct 13 13:11:09 2026 ;
+; PalletizerSim.sdc ; OK     ; Tue Oct 13 13:40:47 2026 ;
 +-------------------+--------+--------------------------+
 
 
@@ -151,8 +151,8 @@ Parallel compilation attempted to use more processors than were available, which
 +------------+-----------------+-----------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                        ; Note ;
 +------------+-----------------+-----------------------------------+------+
-; 179.08 MHz ; 179.08 MHz      ; clk_50                            ;      ;
-; 421.05 MHz ; 421.05 MHz      ; palletizer_sim:inst1|ctrl_clk_int ;      ;
+; 193.2 MHz  ; 193.2 MHz       ; clk_50                            ;      ;
+; 209.82 MHz ; 209.82 MHz      ; palletizer_sim:inst1|ctrl_clk_int ;      ;
 +------------+-----------------+-----------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -168,8 +168,8 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -4.584 ; -363.557      ;
-; palletizer_sim:inst1|ctrl_clk_int ; -4.030 ; -11.802       ;
+; palletizer_sim:inst1|ctrl_clk_int ; -6.116 ; -80.324       ;
+; clk_50                            ; -4.176 ; -365.507      ;
 +-----------------------------------+--------+---------------+
 
 
@@ -178,8 +178,8 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------+-------+---------------+
 ; Clock                             ; Slack ; End Point TNS ;
 +-----------------------------------+-------+---------------+
-; clk_50                            ; 0.232 ; 0.000         ;
-; palletizer_sim:inst1|ctrl_clk_int ; 0.873 ; 0.000         ;
+; clk_50                            ; 0.254 ; 0.000         ;
+; palletizer_sim:inst1|ctrl_clk_int ; 0.444 ; 0.000         ;
 +-----------------------------------+-------+---------------+
 
 
@@ -188,7 +188,7 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; -3.417 ; -10.181       ;
+; palletizer_sim:inst1|ctrl_clk_int ; -3.459 ; -46.553       ;
 +-----------------------------------+--------+---------------+
 
 
@@ -197,7 +197,7 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------+-------+---------------+
 ; Clock                             ; Slack ; End Point TNS ;
 +-----------------------------------+-------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; 2.750 ; 0.000         ;
+; palletizer_sim:inst1|ctrl_clk_int ; 2.472 ; 0.000         ;
 +-----------------------------------+-------+---------------+
 
 
@@ -206,8 +206,8 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -0.602 ; -109.973      ;
-; palletizer_sim:inst1|ctrl_clk_int ; -0.394 ; -1.562        ;
+; clk_50                            ; -0.589 ; -106.398      ;
+; palletizer_sim:inst1|ctrl_clk_int ; -0.394 ; -7.993        ;
 +-----------------------------------+--------+---------------+
 
 
@@ -223,8 +223,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------+-----------------+-----------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                        ; Note ;
 +------------+-----------------+-----------------------------------+------+
-; 176.58 MHz ; 176.58 MHz      ; clk_50                            ;      ;
-; 422.3 MHz  ; 422.3 MHz       ; palletizer_sim:inst1|ctrl_clk_int ;      ;
+; 192.27 MHz ; 192.27 MHz      ; clk_50                            ;      ;
+; 215.56 MHz ; 215.56 MHz      ; palletizer_sim:inst1|ctrl_clk_int ;      ;
 +------------+-----------------+-----------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -234,8 +234,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -4.663 ; -350.885      ;
-; palletizer_sim:inst1|ctrl_clk_int ; -4.160 ; -12.198       ;
+; palletizer_sim:inst1|ctrl_clk_int ; -6.278 ; -82.026       ;
+; clk_50                            ; -4.201 ; -352.002      ;
 +-----------------------------------+--------+---------------+
 
 
@@ -244,8 +244,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------+-------+---------------+
 ; Clock                             ; Slack ; End Point TNS ;
 +-----------------------------------+-------+---------------+
-; clk_50                            ; 0.216 ; 0.000         ;
-; palletizer_sim:inst1|ctrl_clk_int ; 0.874 ; 0.000         ;
+; clk_50                            ; 0.100 ; 0.000         ;
+; palletizer_sim:inst1|ctrl_clk_int ; 0.454 ; 0.000         ;
 +-----------------------------------+-------+---------------+
 
 
@@ -254,7 +254,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; -3.484 ; -10.372       ;
+; palletizer_sim:inst1|ctrl_clk_int ; -3.514 ; -47.605       ;
 +-----------------------------------+--------+---------------+
 
 
@@ -263,7 +263,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------+-------+---------------+
 ; Clock                             ; Slack ; End Point TNS ;
 +-----------------------------------+-------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; 2.830 ; 0.000         ;
+; palletizer_sim:inst1|ctrl_clk_int ; 2.576 ; 0.000         ;
 +-----------------------------------+-------+---------------+
 
 
@@ -272,8 +272,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -0.669 ; -100.376      ;
-; palletizer_sim:inst1|ctrl_clk_int ; -0.394 ; -1.556        ;
+; clk_50                            ; -0.661 ; -97.564       ;
+; palletizer_sim:inst1|ctrl_clk_int ; -0.394 ; -7.905        ;
 +-----------------------------------+--------+---------------+
 
 
@@ -289,8 +289,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -3.286 ; -163.952      ;
-; palletizer_sim:inst1|ctrl_clk_int ; -1.910 ; -5.545        ;
+; clk_50                            ; -3.273 ; -172.924      ;
+; palletizer_sim:inst1|ctrl_clk_int ; -3.060 ; -39.993       ;
 +-----------------------------------+--------+---------------+
 
 
@@ -299,8 +299,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+-------+---------------+
 ; Clock                             ; Slack ; End Point TNS ;
 +-----------------------------------+-------+---------------+
-; clk_50                            ; 0.133 ; 0.000         ;
-; palletizer_sim:inst1|ctrl_clk_int ; 0.432 ; 0.000         ;
+; clk_50                            ; 0.109 ; 0.000         ;
+; palletizer_sim:inst1|ctrl_clk_int ; 0.167 ; 0.000         ;
 +-----------------------------------+-------+---------------+
 
 
@@ -309,7 +309,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; -1.568 ; -4.655        ;
+; palletizer_sim:inst1|ctrl_clk_int ; -1.648 ; -21.771       ;
 +-----------------------------------+--------+---------------+
 
 
@@ -318,7 +318,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+-------+---------------+
 ; Clock                             ; Slack ; End Point TNS ;
 +-----------------------------------+-------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; 1.277 ; 0.000         ;
+; palletizer_sim:inst1|ctrl_clk_int ; 1.111 ; 0.000         ;
 +-----------------------------------+-------+---------------+
 
 
@@ -327,8 +327,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -0.763 ; -73.128       ;
-; palletizer_sim:inst1|ctrl_clk_int ; 0.108  ; 0.000         ;
+; clk_50                            ; -0.746 ; -71.134       ;
+; palletizer_sim:inst1|ctrl_clk_int ; 0.020  ; 0.000         ;
 +-----------------------------------+--------+---------------+
 
 
@@ -344,19 +344,19 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -2.819 ; -138.843      ;
-; palletizer_sim:inst1|ctrl_clk_int ; -1.832 ; -5.322        ;
+; palletizer_sim:inst1|ctrl_clk_int ; -2.875 ; -37.538       ;
+; clk_50                            ; -2.788 ; -145.308      ;
 +-----------------------------------+--------+---------------+
 
 
-+-----------------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                         ;
-+-----------------------------------+-------+---------------+
-; Clock                             ; Slack ; End Point TNS ;
-+-----------------------------------+-------+---------------+
-; clk_50                            ; 0.081 ; 0.000         ;
-; palletizer_sim:inst1|ctrl_clk_int ; 0.402 ; 0.000         ;
-+-----------------------------------+-------+---------------+
++------------------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                          ;
++-----------------------------------+--------+---------------+
+; Clock                             ; Slack  ; End Point TNS ;
++-----------------------------------+--------+---------------+
+; clk_50                            ; -0.048 ; -0.356        ;
+; palletizer_sim:inst1|ctrl_clk_int ; 0.150  ; 0.000         ;
++-----------------------------------+--------+---------------+
 
 
 +------------------------------------------------------------+
@@ -364,7 +364,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; -1.486 ; -4.418        ;
+; palletizer_sim:inst1|ctrl_clk_int ; -1.554 ; -20.673       ;
 +-----------------------------------+--------+---------------+
 
 
@@ -373,7 +373,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+-------+---------------+
 ; Clock                             ; Slack ; End Point TNS ;
 +-----------------------------------+-------+---------------+
-; palletizer_sim:inst1|ctrl_clk_int ; 1.234 ; 0.000         ;
+; palletizer_sim:inst1|ctrl_clk_int ; 1.095 ; 0.000         ;
 +-----------------------------------+-------+---------------+
 
 
@@ -382,8 +382,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+--------+---------------+
 ; Clock                             ; Slack  ; End Point TNS ;
 +-----------------------------------+--------+---------------+
-; clk_50                            ; -0.819 ; -87.390       ;
-; palletizer_sim:inst1|ctrl_clk_int ; 0.120  ; 0.000         ;
+; clk_50                            ; -0.808 ; -85.034       ;
+; palletizer_sim:inst1|ctrl_clk_int ; 0.053  ; 0.000         ;
 +-----------------------------------+--------+---------------+
 
 
@@ -394,18 +394,18 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 
 
 
-+--------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                              ;
-+------------------------------------+----------+-------+----------+---------+---------------------+
-; Clock                              ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                   ; -4.663   ; 0.081 ; -3.484   ; 1.234   ; -0.819              ;
-;  clk_50                            ; -4.663   ; 0.081 ; N/A      ; N/A     ; -0.819              ;
-;  palletizer_sim:inst1|ctrl_clk_int ; -4.160   ; 0.402 ; -3.484   ; 1.234   ; -0.394              ;
-; Design-wide TNS                    ; -375.359 ; 0.0   ; -10.372  ; 0.0     ; -111.535            ;
-;  clk_50                            ; -363.557 ; 0.000 ; N/A      ; N/A     ; -109.973            ;
-;  palletizer_sim:inst1|ctrl_clk_int ; -12.198  ; 0.000 ; -10.372  ; 0.000   ; -1.562              ;
-+------------------------------------+----------+-------+----------+---------+---------------------+
++---------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                               ;
++------------------------------------+----------+--------+----------+---------+---------------------+
+; Clock                              ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------------------------+----------+--------+----------+---------+---------------------+
+; Worst-case Slack                   ; -6.278   ; -0.048 ; -3.514   ; 1.095   ; -0.808              ;
+;  clk_50                            ; -4.201   ; -0.048 ; N/A      ; N/A     ; -0.808              ;
+;  palletizer_sim:inst1|ctrl_clk_int ; -6.278   ; 0.150  ; -3.514   ; 1.095   ; -0.394              ;
+; Design-wide TNS                    ; -445.831 ; -0.356 ; -47.605  ; 0.0     ; -114.391            ;
+;  clk_50                            ; -365.507 ; -0.356 ; N/A      ; N/A     ; -106.398            ;
+;  palletizer_sim:inst1|ctrl_clk_int ; -82.026  ; 0.000  ; -47.605  ; 0.000   ; -7.993              ;
++------------------------------------+----------+--------+----------+---------+---------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -736,10 +736,10 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------------+-----------------------------------+----------+----------+----------+----------+
 ; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; clk_50                            ; clk_50                            ; 4222     ; 0        ; 0        ; 0        ;
-; palletizer_sim:inst1|ctrl_clk_int ; clk_50                            ; 77       ; 1        ; 0        ; 0        ;
-; clk_50                            ; palletizer_sim:inst1|ctrl_clk_int ; 10       ; 0        ; 0        ; 0        ;
-; palletizer_sim:inst1|ctrl_clk_int ; palletizer_sim:inst1|ctrl_clk_int ; 5        ; 0        ; 0        ; 0        ;
+; clk_50                            ; clk_50                            ; 4220     ; 0        ; 0        ; 0        ;
+; palletizer_sim:inst1|ctrl_clk_int ; clk_50                            ; 544      ; 1        ; 0        ; 0        ;
+; clk_50                            ; palletizer_sim:inst1|ctrl_clk_int ; 1070     ; 0        ; 0        ; 0        ;
+; palletizer_sim:inst1|ctrl_clk_int ; palletizer_sim:inst1|ctrl_clk_int ; 716      ; 0        ; 0        ; 0        ;
 +-----------------------------------+-----------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -749,10 +749,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------------+-----------------------------------+----------+----------+----------+----------+
 ; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; clk_50                            ; clk_50                            ; 4222     ; 0        ; 0        ; 0        ;
-; palletizer_sim:inst1|ctrl_clk_int ; clk_50                            ; 77       ; 1        ; 0        ; 0        ;
-; clk_50                            ; palletizer_sim:inst1|ctrl_clk_int ; 10       ; 0        ; 0        ; 0        ;
-; palletizer_sim:inst1|ctrl_clk_int ; palletizer_sim:inst1|ctrl_clk_int ; 5        ; 0        ; 0        ; 0        ;
+; clk_50                            ; clk_50                            ; 4220     ; 0        ; 0        ; 0        ;
+; palletizer_sim:inst1|ctrl_clk_int ; clk_50                            ; 544      ; 1        ; 0        ; 0        ;
+; clk_50                            ; palletizer_sim:inst1|ctrl_clk_int ; 1070     ; 0        ; 0        ; 0        ;
+; palletizer_sim:inst1|ctrl_clk_int ; palletizer_sim:inst1|ctrl_clk_int ; 716      ; 0        ; 0        ; 0        ;
 +-----------------------------------+-----------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -762,7 +762,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+-----------------------------------+----------+----------+----------+----------+
 ; From Clock ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+-----------------------------------+----------+----------+----------+----------+
-; clk_50     ; palletizer_sim:inst1|ctrl_clk_int ; 3        ; 0        ; 0        ; 0        ;
+; clk_50     ; palletizer_sim:inst1|ctrl_clk_int ; 14       ; 0        ; 0        ; 0        ;
 +------------+-----------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -772,7 +772,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+-----------------------------------+----------+----------+----------+----------+
 ; From Clock ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+-----------------------------------+----------+----------+----------+----------+
-; clk_50     ; palletizer_sim:inst1|ctrl_clk_int ; 3        ; 0        ; 0        ; 0        ;
+; clk_50     ; palletizer_sim:inst1|ctrl_clk_int ; 14       ; 0        ; 0        ; 0        ;
 +------------+-----------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -797,9 +797,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 12    ; 12   ;
-; Unconstrained Input Port Paths  ; 441   ; 441  ;
+; Unconstrained Input Port Paths  ; 436   ; 436  ;
 ; Unconstrained Output Ports      ; 50    ; 50   ;
-; Unconstrained Output Port Paths ; 179   ; 179  ;
+; Unconstrained Output Port Paths ; 277   ; 277  ;
 +---------------------------------+-------+------+
 
 
@@ -975,7 +975,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Tue Oct 13 13:11:07 2026
+    Info: Processing started: Tue Oct 13 13:40:45 2026
 Info: Command: quartus_sta PalletizerF26 -c PalletizerSim
 Info: qsta_default_script.tcl version: #1
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
@@ -993,29 +993,29 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = OFF
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.584
+Info (332146): Worst-case setup slack is -6.116
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.584            -363.557 clk_50 
-    Info (332119):    -4.030             -11.802 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case hold slack is 0.232
+    Info (332119):    -6.116             -80.324 palletizer_sim:inst1|ctrl_clk_int 
+    Info (332119):    -4.176            -365.507 clk_50 
+Info (332146): Worst-case hold slack is 0.254
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.232               0.000 clk_50 
-    Info (332119):     0.873               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case recovery slack is -3.417
+    Info (332119):     0.254               0.000 clk_50 
+    Info (332119):     0.444               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case recovery slack is -3.459
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.417             -10.181 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case removal slack is 2.750
+    Info (332119):    -3.459             -46.553 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case removal slack is 2.472
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.750               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case minimum pulse width slack is -0.602
+    Info (332119):     2.472               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case minimum pulse width slack is -0.589
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.602            -109.973 clk_50 
-    Info (332119):    -0.394              -1.562 palletizer_sim:inst1|ctrl_clk_int 
+    Info (332119):    -0.589            -106.398 clk_50 
+    Info (332119):    -0.394              -7.993 palletizer_sim:inst1|ctrl_clk_int 
 Info (332114): Report Metastability: Found 4 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
@@ -1024,29 +1024,29 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.663
+Info (332146): Worst-case setup slack is -6.278
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.663            -350.885 clk_50 
-    Info (332119):    -4.160             -12.198 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case hold slack is 0.216
+    Info (332119):    -6.278             -82.026 palletizer_sim:inst1|ctrl_clk_int 
+    Info (332119):    -4.201            -352.002 clk_50 
+Info (332146): Worst-case hold slack is 0.100
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.216               0.000 clk_50 
-    Info (332119):     0.874               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case recovery slack is -3.484
+    Info (332119):     0.100               0.000 clk_50 
+    Info (332119):     0.454               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case recovery slack is -3.514
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.484             -10.372 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case removal slack is 2.830
+    Info (332119):    -3.514             -47.605 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case removal slack is 2.576
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.830               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case minimum pulse width slack is -0.669
+    Info (332119):     2.576               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case minimum pulse width slack is -0.661
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.669            -100.376 clk_50 
-    Info (332119):    -0.394              -1.556 palletizer_sim:inst1|ctrl_clk_int 
+    Info (332119):    -0.661             -97.564 clk_50 
+    Info (332119):    -0.394              -7.905 palletizer_sim:inst1|ctrl_clk_int 
 Info (332114): Report Metastability: Found 4 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
@@ -1055,66 +1055,66 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.286
+Info (332146): Worst-case setup slack is -3.273
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.286            -163.952 clk_50 
-    Info (332119):    -1.910              -5.545 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case hold slack is 0.133
+    Info (332119):    -3.273            -172.924 clk_50 
+    Info (332119):    -3.060             -39.993 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case hold slack is 0.109
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.133               0.000 clk_50 
-    Info (332119):     0.432               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case recovery slack is -1.568
+    Info (332119):     0.109               0.000 clk_50 
+    Info (332119):     0.167               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case recovery slack is -1.648
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.568              -4.655 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case removal slack is 1.277
+    Info (332119):    -1.648             -21.771 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case removal slack is 1.111
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.277               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case minimum pulse width slack is -0.763
+    Info (332119):     1.111               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case minimum pulse width slack is -0.746
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.763             -73.128 clk_50 
-    Info (332119):     0.108               0.000 palletizer_sim:inst1|ctrl_clk_int 
+    Info (332119):    -0.746             -71.134 clk_50 
+    Info (332119):     0.020               0.000 palletizer_sim:inst1|ctrl_clk_int 
 Info (332114): Report Metastability: Found 4 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.819
+Info (332146): Worst-case setup slack is -2.875
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.819            -138.843 clk_50 
-    Info (332119):    -1.832              -5.322 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case hold slack is 0.081
+    Info (332119):    -2.875             -37.538 palletizer_sim:inst1|ctrl_clk_int 
+    Info (332119):    -2.788            -145.308 clk_50 
+Info (332146): Worst-case hold slack is -0.048
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.081               0.000 clk_50 
-    Info (332119):     0.402               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case recovery slack is -1.486
+    Info (332119):    -0.048              -0.356 clk_50 
+    Info (332119):     0.150               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case recovery slack is -1.554
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.486              -4.418 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case removal slack is 1.234
+    Info (332119):    -1.554             -20.673 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case removal slack is 1.095
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.234               0.000 palletizer_sim:inst1|ctrl_clk_int 
-Info (332146): Worst-case minimum pulse width slack is -0.819
+    Info (332119):     1.095               0.000 palletizer_sim:inst1|ctrl_clk_int 
+Info (332146): Worst-case minimum pulse width slack is -0.808
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.819             -87.390 clk_50 
-    Info (332119):     0.120               0.000 palletizer_sim:inst1|ctrl_clk_int 
+    Info (332119):    -0.808             -85.034 clk_50 
+    Info (332119):     0.053               0.000 palletizer_sim:inst1|ctrl_clk_int 
 Info (332114): Report Metastability: Found 4 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 5435 megabytes
-    Info: Processing ended: Tue Oct 13 13:11:12 2026
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Tue Oct 13 13:40:51 2026
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:07
 
 

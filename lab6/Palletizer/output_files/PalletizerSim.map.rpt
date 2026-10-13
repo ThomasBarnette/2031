@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PalletizerSim
-Tue Oct 13 13:10:20 2026
+Tue Oct 13 13:40:00 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -51,13 +51,13 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 13 13:10:20 2026           ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 13 13:40:00 2026           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; PalletizerSim                                   ;
 ; Top-level Entity Name           ; PalletizerTop                                   ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 154                                             ;
+; Total registers                 ; 165                                             ;
 ; Total pins                      ; 67                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -173,7 +173,8 @@ Parallel compilation attempted to use more processors than were available, which
 ;                                 ;             ;
 ; Usage by Processor              ; % Time Used ;
 ;     Processor 1                 ; 100.0%      ;
-;     Processors 2-12             ;   0.0%      ;
+;     Processor 2                 ;   0.0%      ;
+;     Processors 3-12             ;   0.0%      ;
 ;     Processors 13-16 (overused) ;   0.0%      ;
 +---------------------------------+-------------+
 
@@ -201,16 +202,16 @@ Parallel compilation attempted to use more processors than were available, which
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 196          ;
+; Estimate of Logic utilization (ALMs needed) ; 238          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 294          ;
-;     -- 7 input functions                    ; 2            ;
-;     -- 6 input functions                    ; 94           ;
-;     -- 5 input functions                    ; 35           ;
-;     -- 4 input functions                    ; 26           ;
-;     -- <=3 input functions                  ; 137          ;
+; Combinational ALUT usage for logic          ; 366          ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 107          ;
+;     -- 5 input functions                    ; 72           ;
+;     -- 4 input functions                    ; 36           ;
+;     -- <=3 input functions                  ; 151          ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 154          ;
+; Dedicated logic registers                   ; 165          ;
 ;                                             ;              ;
 ; I/O pins                                    ; 67           ;
 ;                                             ;              ;
@@ -218,8 +219,8 @@ Parallel compilation attempted to use more processors than were available, which
 ;                                             ;              ;
 ; Maximum fan-out node                        ; clk_50~input ;
 ; Maximum fan-out                             ; 151          ;
-; Total fan-out                               ; 1794         ;
-; Average fan-out                             ; 3.08         ;
+; Total fan-out                               ; 2156         ;
+; Average fan-out                             ; 3.24         ;
 +---------------------------------------------+--------------+
 
 
@@ -228,12 +229,12 @@ Parallel compilation attempted to use more processors than were available, which
 +-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name     ; Library Name ;
 +-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
-; |PalletizerTop                    ; 294 (1)             ; 154 (0)                   ; 0                 ; 0          ; 67   ; 0            ; |PalletizerTop                                                                ; PalletizerTop   ; work         ;
-;    |ctrl_mux:inst|                ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|ctrl_mux:inst                                                  ; ctrl_mux        ; work         ;
-;       |lpm_mux:LPM_MUX_component| ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|ctrl_mux:inst|lpm_mux:LPM_MUX_component                        ; lpm_mux         ; work         ;
-;          |mux_70e:auto_generated| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|ctrl_mux:inst|lpm_mux:LPM_MUX_component|mux_70e:auto_generated ; mux_70e         ; work         ;
-;    |palletizer_ctrl:inst2|        ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|palletizer_ctrl:inst2                                          ; palletizer_ctrl ; work         ;
-;    |palletizer_sim:inst1|         ; 286 (286)           ; 151 (151)                 ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|palletizer_sim:inst1                                           ; palletizer_sim  ; work         ;
+; |PalletizerTop                    ; 366 (1)             ; 165 (0)                   ; 0                 ; 0          ; 67   ; 0            ; |PalletizerTop                                                                ; PalletizerTop   ; work         ;
+;    |ctrl_mux:inst|                ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|ctrl_mux:inst                                                  ; ctrl_mux        ; work         ;
+;       |lpm_mux:LPM_MUX_component| ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|ctrl_mux:inst|lpm_mux:LPM_MUX_component                        ; lpm_mux         ; work         ;
+;          |mux_70e:auto_generated| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|ctrl_mux:inst|lpm_mux:LPM_MUX_component|mux_70e:auto_generated ; mux_70e         ; work         ;
+;    |palletizer_ctrl:inst2|        ; 82 (82)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|palletizer_ctrl:inst2                                          ; palletizer_ctrl ; work         ;
+;    |palletizer_sim:inst1|         ; 277 (277)           ; 151 (151)                 ; 0                 ; 0          ; 0    ; 0            ; |PalletizerTop|palletizer_sim:inst1                                           ; palletizer_sim  ; work         ;
 +-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -248,15 +249,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------+
-; State Machine - |PalletizerTop|palletizer_ctrl:inst2|state               ;
-+--------------------+--------------------+-------------------+------------+
-; Name               ; state.INSERT_RIGHT ; state.INSERT_LEFT ; state.IDLE ;
-+--------------------+--------------------+-------------------+------------+
-; state.IDLE         ; 0                  ; 0                 ; 0          ;
-; state.INSERT_LEFT  ; 0                  ; 1                 ; 1          ;
-; state.INSERT_RIGHT ; 1                  ; 0                 ; 1          ;
-+--------------------+--------------------+-------------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |PalletizerTop|palletizer_ctrl:inst2|state                                                                                                                                                                                                                                                       ;
++----------------------------+-------------+--------------+--------------+--------------+----------------------------+----------------------------+------------------+-----------------+------------------+-----------------+---------------------------+--------------------------+-----------------+-------------+
+; Name                       ; state.EJECT ; state.WAIT_4 ; state.WAIT_3 ; state.WAIT_2 ; state.WRAP_RIGHT_FEED_LEFT ; state.WRAP_LEFT_FEED_RIGHT ; state.WRAP_RIGHT ; state.WRAP_LEFT ; state.FEED_RIGHT ; state.FEED_LEFT ; state.FEED_RIGHT_PRIORITY ; state.FEED_LEFT_PRIORITY ; state.FEED_BOTH ; state.EMPTY ;
++----------------------------+-------------+--------------+--------------+--------------+----------------------------+----------------------------+------------------+-----------------+------------------+-----------------+---------------------------+--------------------------+-----------------+-------------+
+; state.EMPTY                ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 0           ;
+; state.FEED_BOTH            ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 1               ; 1           ;
+; state.FEED_LEFT_PRIORITY   ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 1                        ; 0               ; 1           ;
+; state.FEED_RIGHT_PRIORITY  ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 1                         ; 0                        ; 0               ; 1           ;
+; state.FEED_LEFT            ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 1               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.FEED_RIGHT           ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 1                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.WRAP_LEFT            ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 1               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.WRAP_RIGHT           ; 0           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 1                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.WRAP_LEFT_FEED_RIGHT ; 0           ; 0            ; 0            ; 0            ; 0                          ; 1                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.WRAP_RIGHT_FEED_LEFT ; 0           ; 0            ; 0            ; 0            ; 1                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.WAIT_2               ; 0           ; 0            ; 0            ; 1            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.WAIT_3               ; 0           ; 0            ; 1            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.WAIT_4               ; 0           ; 1            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
+; state.EJECT                ; 1           ; 0            ; 0            ; 0            ; 0                          ; 0                          ; 0                ; 0               ; 0                ; 0               ; 0                         ; 0                        ; 0               ; 1           ;
++----------------------------+-------------+--------------+--------------+--------------+----------------------------+----------------------------+------------------+-----------------+------------------+-----------------+---------------------------+--------------------------+-----------------+-------------+
 
 
 Encoding Type:  One-Hot
@@ -300,12 +312,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 154   ;
+; Total registers                              ; 165   ;
 ; Number of registers using Synchronous Clear  ; 42    ;
 ; Number of registers using Synchronous Load   ; 20    ;
-; Number of registers using Asynchronous Clear ; 95    ;
+; Number of registers using Asynchronous Clear ; 106   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 57    ;
+; Number of registers using Clock Enable       ; 61    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -315,19 +327,19 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; palletizer_sim:inst1|lfsr[0]            ; 3       ;
 ; palletizer_sim:inst1|btn_reg2[1]        ; 2       ;
 ; palletizer_sim:inst1|btn_reg2[2]        ; 1       ;
 ; palletizer_sim:inst1|btn_reg3[1]        ; 3       ;
 ; palletizer_sim:inst1|btn_reg3[2]        ; 2       ;
+; palletizer_sim:inst1|lfsr[0]            ; 2       ;
 ; palletizer_sim:inst1|lfsr[11]           ; 6       ;
 ; palletizer_sim:inst1|btn_reg1[1]        ; 2       ;
 ; palletizer_sim:inst1|btn_reg1[2]        ; 1       ;
 ; palletizer_sim:inst1|btn_reg0[1]        ; 3       ;
 ; palletizer_sim:inst1|btn_reg0[2]        ; 2       ;
-; palletizer_sim:inst1|lfsr[7]            ; 7       ;
-; palletizer_sim:inst1|lfsr[6]            ; 8       ;
-; palletizer_sim:inst1|lfsr[5]            ; 4       ;
+; palletizer_sim:inst1|lfsr[7]            ; 6       ;
+; palletizer_sim:inst1|lfsr[6]            ; 7       ;
+; palletizer_sim:inst1|lfsr[5]            ; 3       ;
 ; palletizer_sim:inst1|lfsr[15]           ; 2       ;
 ; palletizer_sim:inst1|lfsr[10]           ; 9       ;
 ; palletizer_sim:inst1|lfsr[13]           ; 4       ;
@@ -344,29 +356,31 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|empty_eject_ticks[1] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_wraps_recv[0]     ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|wrap_lf_item[0]      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_wraps_recv[0]     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|empty_eject_ticks[2] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_wraps_recv[1]     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|wrap_lf_item[1]      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_wraps_recv[2]     ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|wrap_rt_item[1]      ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|eject_timer[0]       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|wrap_count_int[2]    ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|wrap_timer[4]        ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_waiting_ticks[4]  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|wrap_count_int[1]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|wrap_timer[5]        ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_waiting_ticks[2]  ;
 ; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_waiting_ticks[2]  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_item[0]           ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_item[1]           ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_timer[1]          ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_timer[8]          ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_timer[1]          ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_timer[0]          ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |PalletizerTop|palletizer_sim:inst1|rt_timer[2]          ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_timer[0]          ;
 ; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |PalletizerTop|palletizer_sim:inst1|lf_timer[2]          ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |PalletizerTop|palletizer_sim:inst1|LIGHTS[12]           ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |PalletizerTop|palletizer_sim:inst1|LIGHTS[32]           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |PalletizerTop|palletizer_ctrl:inst2|state               ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; No         ; |PalletizerTop|palletizer_sim:inst1|rt_state             ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |PalletizerTop|palletizer_sim:inst1|rt_state             ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; No         ; |PalletizerTop|palletizer_sim:inst1|lf_state             ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |PalletizerTop|palletizer_sim:inst1|lf_state             ;
+; 34:1               ; 10 bits   ; 220 LEs       ; 110 LEs              ; 110 LEs                ; No         ; |PalletizerTop|palletizer_ctrl:inst2|Selector0           ;
+; 36:1               ; 2 bits    ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; No         ; |PalletizerTop|palletizer_ctrl:inst2|Selector4           ;
+; 36:1               ; 2 bits    ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; No         ; |PalletizerTop|palletizer_ctrl:inst2|Selector13          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
@@ -394,31 +408,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 154                         ;
-;     CLR               ; 47                          ;
+; arriav_ff             ; 165                         ;
+;     CLR               ; 54                          ;
 ;     CLR SCLR          ; 32                          ;
 ;     ENA               ; 11                          ;
-;     ENA CLR           ; 16                          ;
+;     ENA CLR           ; 20                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     ENA SLD           ; 20                          ;
 ;     plain             ; 18                          ;
-; arriav_lcell_comb     ; 296                         ;
+; arriav_lcell_comb     ; 368                         ;
 ;     arith             ; 66                          ;
 ;         1 data inputs ; 66                          ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 228                         ;
+;     normal            ; 302                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 17                          ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 37                          ;
-;         4 data inputs ; 26                          ;
-;         5 data inputs ; 35                          ;
-;         6 data inputs ; 94                          ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 45                          ;
+;         4 data inputs ; 36                          ;
+;         5 data inputs ; 72                          ;
+;         6 data inputs ; 107                         ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.55                        ;
+; Average LUT depth     ; 2.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -437,13 +449,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Tue Oct 13 13:10:09 2026
+    Info: Processing started: Tue Oct 13 13:39:51 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PalletizerF26 -c PalletizerSim
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
 Warning (20031): Parallel compilation is enabled for 16 processors, but there are only 6 processors in the system. Runtime may increase due to over usage of the processor space.
 Info (12021): Found 2 design units, including 1 entities, in source file palletizer_ctrl.vhd
-    Info (12022): Found design unit 1: palletizer_ctrl-Behavioral File: C:/Users/tbarnette7/2031/lab6/Palletizer/palletizer_ctrl.vhd Line: 29
-    Info (12023): Found entity 1: palletizer_ctrl File: C:/Users/tbarnette7/2031/lab6/Palletizer/palletizer_ctrl.vhd Line: 7
+    Info (12022): Found design unit 1: palletizer_ctrl-Behavioral File: C:/Users/tbarnette7/2031/lab6/Palletizer/palletizer_ctrl.vhd Line: 30
+    Info (12023): Found entity 1: palletizer_ctrl File: C:/Users/tbarnette7/2031/lab6/Palletizer/palletizer_ctrl.vhd Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file palletizertop.bdf
     Info (12023): Found entity 1: PalletizerTop
 Info (12021): Found 2 design units, including 1 entities, in source file palletizer_sim.vhd
@@ -477,14 +489,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]"
     Warning (15610): No output dependent on input pin "SW[3]"
-Info (21057): Implemented 380 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 453 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 313 logic cells
+    Info (21061): Implemented 386 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5002 megabytes
-    Info: Processing ended: Tue Oct 13 13:10:20 2026
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 5003 megabytes
+    Info: Processing ended: Tue Oct 13 13:40:00 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 

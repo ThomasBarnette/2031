@@ -1,9 +1,20 @@
 
 State Machine - |PalletizerTop|palletizer_ctrl:inst2|state
-Name state.INSERT_RIGHT state.INSERT_LEFT state.IDLE 
-state.IDLE 0 0 0 
-state.INSERT_LEFT 0 1 1 
-state.INSERT_RIGHT 1 0 1 
+Name state.EJECT state.WAIT_4 state.WAIT_3 state.WAIT_2 state.WRAP_RIGHT_FEED_LEFT state.WRAP_LEFT_FEED_RIGHT state.WRAP_RIGHT state.WRAP_LEFT state.FEED_RIGHT state.FEED_LEFT state.FEED_RIGHT_PRIORITY state.FEED_LEFT_PRIORITY state.FEED_BOTH state.EMPTY 
+state.EMPTY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.FEED_BOTH 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.FEED_LEFT_PRIORITY 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.FEED_RIGHT_PRIORITY 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.FEED_LEFT 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.FEED_RIGHT 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.WRAP_LEFT 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.WRAP_RIGHT 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.WRAP_LEFT_FEED_RIGHT 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRAP_RIGHT_FEED_LEFT 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.WAIT_2 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.WAIT_3 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.WAIT_4 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.EJECT 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
 State Machine - |PalletizerTop|palletizer_sim:inst1|rt_state
 Name rt_state.MOVING_IN rt_state.PRESENT rt_state.ARRIVING rt_state.IDLE 
