@@ -1,0 +1,261 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lights[51]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[48]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[47]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[46]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[45]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[44]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[43]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[42]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[41]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[40]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[39]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[38]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[37]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[36]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[35]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[34]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[33]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[32]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[31]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[30]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[29]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[28]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[27]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[26]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[25]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[24]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[23]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[22]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[21]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[20]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[19]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[18]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[17]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[16]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[15]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[14]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[13]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[12]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[11]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[10]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[9]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[8]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[7]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lights[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50",
+					"strict" : false
+				},
+				{
+					"name" : "SW[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
