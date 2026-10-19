@@ -54,7 +54,7 @@ CheckJNZ: ; Specific tests for JNZ
 	JUMP   WrongJump    ; if that jump fails, something is wrong
 
 Questions:
-	LOADI  &H1337       ; Why doesn't this operand work?
+	LOADI  &H00F       ; Why doesn't this operand work?
 	OR     255          ; Why doesn't AC get OR'd with 255 (0xFF)?
 	ADDI   Temp         ; Why doesn't 2 (the value in Temp) get added?
 	

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="36" xOffset="0" scrollWidth="567" startPos="1251" endPos="1251" selMode="0" offset="0" wrapCount="1" lang="Assembly" encoding="-1" userReadOnly="no" filename="C:\Users\tbarnette7\2031\lab7\SCOMP_Spring26\SCOMP\SimpleDemo.asm" backupFilePath="" originalFileLastModifTimestamp="-1650724589" originalFileLastModifTimestampHigh="31285274" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
