@@ -34,9 +34,9 @@ architecture a of SCOMP is
 	type state_type is (
 		init, fetch, decode,
 		ex_nop, ex_load, ex_store, ex_store2,
-		ex_loadi, ex_add, ex_addi,
+		ex_loadi, ex_add, ex_sub, ex_addi,
 		ex_and, ex_or, ex_xor, ex_shift,
-		ex_jump, ex_jneg, ex_jzero,
+		ex_jump, ex_jneg, ex_jzero, ex_jpos, ex_jnz,
 		ex_return, ex_call,
 		ex_in, ex_in2, ex_out, ex_out2
 	);
@@ -156,6 +156,8 @@ begin
 							state <= ex_loadi;
 						when "00100"  =>        -- add
 							state <= ex_add;
+						when "00101" =>
+							state <= ex_sub;
 
 						when "00110"  =>        -- addi
 							state <= ex_addi;
@@ -171,10 +173,12 @@ begin
 							state <= ex_jump;
 						when "01100"  =>        -- jneg
 							state <= ex_jneg;
-
+						when "01101" =>
+							state <= ex_jpos;
 						when "01110"  =>        -- jzero
 							state <= ex_jzero;
-
+						when "11110"=>
+							state <= ex_jnz;
 						when "10000"  =>        -- call
 							state <= ex_call;
 						when "10001"  =>        -- return
@@ -207,6 +211,10 @@ begin
 				when ex_add =>
 					AC    <= AC + mem_data;   -- addition
 					state <= fetch;
+				
+				when ex_sub =>
+					AC <= AC - mem_data;
+					state <= fetch;
 
 				when ex_addi =>
 					-- sign extension
@@ -226,6 +234,18 @@ begin
 
 				when ex_jzero =>
 					if (AC = x"0000") then
+						PC    <= operand;
+					end if;
+					state <= fetch;
+				
+				when ex_jpos =>
+					if (AC(15) /= '1' and AC /= x"0000") then
+						PC    <= operand;
+					end if;
+					state <= fetch;
+
+				when ex_jnz =>
+					if (AC /= x"0000") then
 						PC    <= operand;
 					end if;
 					state <= fetch;
