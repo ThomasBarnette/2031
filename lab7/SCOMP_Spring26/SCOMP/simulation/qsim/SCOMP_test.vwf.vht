@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/20/2026 13:22:36"
+-- Generated on "10/20/2026 14:14:58"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          SCOMP
 -- 
@@ -49,16 +49,16 @@ SIGNAL resetn : STD_LOGIC;
 COMPONENT SCOMP
 	PORT (
 	clock : IN STD_LOGIC;
-	dbg_AC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	dbg_FETCH : OUT STD_LOGIC;
-	dbg_IR : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	dbg_MD : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	dbg_NMA : OUT STD_LOGIC_VECTOR(10 DOWNTO 0);
-	dbg_PC : OUT STD_LOGIC_VECTOR(10 DOWNTO 0);
-	IO_ADDR : OUT STD_LOGIC_VECTOR(10 DOWNTO 0);
-	IO_DATA : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	IO_READ : OUT STD_LOGIC;
-	IO_WRITE : OUT STD_LOGIC;
+	dbg_AC : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	dbg_FETCH : BUFFER STD_LOGIC;
+	dbg_IR : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	dbg_MD : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	dbg_NMA : BUFFER STD_LOGIC_VECTOR(10 DOWNTO 0);
+	dbg_PC : BUFFER STD_LOGIC_VECTOR(10 DOWNTO 0);
+	IO_ADDR : BUFFER STD_LOGIC_VECTOR(10 DOWNTO 0);
+	IO_DATA : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	IO_READ : BUFFER STD_LOGIC;
+	IO_WRITE : BUFFER STD_LOGIC;
 	resetn : IN STD_LOGIC
 	);
 END COMPONENT;

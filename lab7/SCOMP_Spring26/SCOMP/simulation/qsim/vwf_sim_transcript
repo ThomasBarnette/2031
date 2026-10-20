@@ -28,7 +28,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Tue Oct 20 13:22:35 2026
+    Info: Processing started: Tue Oct 20 14:14:57 2026
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SCOMP_bare -c SCOMP_bare --vector_source=C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/SCOMP_test.vwf --testbench_file=C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim/SCOMP_test.vwf.vht
 
 rning (201005): Ignoring output pin "dbg_AC[4]" in vector source file when writing test bench files
@@ -39,7 +39,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/Downloads/sum25/SCOMP/simulation/qsim/" SCOMP_bare -c SCOMP_bare
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim/" SCOMP_bare -c SCOMP_bare
 
 TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
 
@@ -60,11 +60,12 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Tue Oct 20 13:22:37 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Downloads/sum25/SCOMP/simulation/qsim/ SCOMP_bare -c SCOMP_bare
+    Info: Processing started: Tue Oct 20 14:14:59 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim/ SCOMP_bare -c SCOMP_bare
+Info (204019): Generated file SCOMP_bare.vho in folder "C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Tue Oct 20 13:22:38 2026
+    Info: Processing ended: Tue Oct 20 14:15:00 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -92,7 +93,7 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 13:22:40 on Oct 20,2026
+# Start time: 14:15:02 on Oct 20,2026
 
 # vcom -work work SCOMP_bare.vho 
 
@@ -120,13 +121,13 @@ Reading pref.tcl
 
 # -- Compiling architecture structure of SCOMP
 
-# End time: 13:22:40 on Oct 20,2026, Elapsed time: 0:00:00
+# End time: 14:15:02 on Oct 20,2026, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 13:22:40 on Oct 20,2026
+# Start time: 14:15:02 on Oct 20,2026
 
 # vcom -work work SCOMP_test.vwf.vht 
 
@@ -140,12 +141,12 @@ Reading pref.tcl
 
 # -- Compiling architecture SCOMP_arch of SCOMP_vhd_vec_tst
 
-# End time: 13:22:40 on Oct 20,2026, Elapsed time: 0:00:00
+# End time: 14:15:02 on Oct 20,2026, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.SCOMP_vhd_vec_tst 
-# Start time: 13:22:40 on Oct 20,2026
+# Start time: 14:15:02 on Oct 20,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -162,8 +163,8 @@ Reading pref.tcl
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_clkena(behavior)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading cyclonev.cyclonev_ram_block(block_arch)
 # Loading sv_std.std
 # Loading altera_lnsim.generic_m10k
@@ -171,12 +172,12 @@ Reading pref.tcl
 # Loading altera_lnsim.common_28nm_ram_block
 # Loading altera_lnsim.common_28nm_ram_register
 # Loading altera_lnsim.common_28nm_ram_pulse_generator
-# ** Warning: Design size of 117067 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 120206 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 
 # after#34
 
-# End time: 13:22:43 on Oct 20,2026, Elapsed time: 0:00:03
+# End time: 14:15:05 on Oct 20,2026, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -189,7 +190,7 @@ Reading C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim/SCOMP
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim/SCOMP_bare_20261020132243.sim.vwf
+Writing the resulting VWF to C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim/SCOMP_bare_20261020141505.sim.vwf
 
 Finished VCD to VWF conversion.
 

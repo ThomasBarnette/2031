@@ -1,5 +1,5 @@
 EDA Netlist Writer report for SCOMP_bare
-Tue Oct 20 13:22:38 2026
+Tue Oct 20 14:15:00 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -9,7 +9,8 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   1. Legal Notice
   2. EDA Netlist Writer Summary
   3. Simulation Settings
-  4. EDA Netlist Writer Messages
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
 
 
 
@@ -36,11 +37,11 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 20 13:22:38 2026 ;
+; EDA Netlist Writer Status ; Successful - Tue Oct 20 14:15:00 2026 ;
 ; Revision Name             ; SCOMP_bare                            ;
 ; Top-level Entity Name     ; SCOMP                                 ;
 ; Family                    ; Cyclone V                             ;
-; Simulation Files Creation ; Failed                                ;
+; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
 
@@ -65,6 +66,15 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------------------------------------------+--------------------------+
 
 
++------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                         ;
++------------------------------------------------------------------------------------+
+; Generated Files                                                                    ;
++------------------------------------------------------------------------------------+
+; C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim//SCOMP_bare.vho ;
++------------------------------------------------------------------------------------+
+
+
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
@@ -85,11 +95,12 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Tue Oct 20 13:22:37 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Downloads/sum25/SCOMP/simulation/qsim/ SCOMP_bare -c SCOMP_bare
+    Info: Processing started: Tue Oct 20 14:14:59 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim/ SCOMP_bare -c SCOMP_bare
+Info (204019): Generated file SCOMP_bare.vho in folder "C:/Users/tbarnette7/2031/lab7/SCOMP_Spring26/SCOMP/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Tue Oct 20 13:22:38 2026
+    Info: Processing ended: Tue Oct 20 14:15:00 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

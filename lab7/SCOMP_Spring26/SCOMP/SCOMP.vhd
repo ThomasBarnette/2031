@@ -177,7 +177,7 @@ begin
 							state <= ex_jpos;
 						when "01110"  =>        -- jzero
 							state <= ex_jzero;
-						when "11110"=>
+						when "01111"=>
 							state <= ex_jnz;
 						when "10000"  =>        -- call
 							state <= ex_call;

@@ -121,18 +121,18 @@ VCCPD3A                      : AA10      : power  :                   : 3.3V    
 GND                          : AA11      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AA12      :        :                   :         : 3A        :                
 RESERVED_INPUT               : AA13      :        :                   :         : 3B        :                
-IO_ADDR[4]                   : AA14      : output : 3.3-V LVTTL       :         : 3B        : N              
-dbg_IR[4]                    : AA15      : output : 3.3-V LVTTL       :         : 3B        : N              
-dbg_PC[5]                    : AA16      : output : 3.3-V LVTTL       :         : 4A        : N              
+RESERVED_INPUT               : AA14      :        :                   :         : 3B        :                
+RESERVED_INPUT               : AA15      :        :                   :         : 3B        :                
+IO_ADDR[2]                   : AA16      : output : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AA17      : power  :                   : 3.3V    : 4A        :                
-dbg_MD[7]                    : AA18      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[13]                   : AA19      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[0]                   : AA20      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[2]                   : AA18      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[15]                  : AA19      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_PC[0]                    : AA20      : output : 3.3-V LVTTL       :         : 4A        : N              
 RESERVED_INPUT               : AA21      :        :                   :         : 4A        :                
 GND                          : AA22      : gnd    :                   :         :           :                
 VCCPGM                       : AA23      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-RESERVED_INPUT               : AA24      :        :                   :         : 5A        :                
-RESERVED_INPUT               : AA25      :        :                   :         : 5A        :                
+dbg_IR[14]                   : AA24      : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_MD[4]                    : AA25      : output : 3.3-V LVTTL       :         : 5A        : N              
 RESERVED_INPUT               : AA26      :        :                   :         : 5B        :                
 VCCIO5B                      : AA27      : power  :                   : 3.3V    : 5B        :                
 RESERVED_INPUT               : AA28      :        :                   :         : 5B        :                
@@ -158,12 +158,12 @@ dbg_PC[10]                   : AB17      : output : 3.3-V LVTTL       :         
 VCCPD3B4A                    : AB18      : power  :                   : 3.3V    : 3B, 4A    :                
 GND                          : AB19      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AB20      : power  :                   : 3.3V    : 3B, 4A    :                
-dbg_IR[0]                    : AB21      : output : 3.3-V LVTTL       :         : 4A        : N              
-RESERVED_INPUT               : AB22      :        :                   :         : 5A        :                
-RESERVED_INPUT               : AB23      :        :                   :         : 5A        :                
+IO_ADDR[6]                   : AB21      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[15]                   : AB22      : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_MD[7]                    : AB23      : output : 3.3-V LVTTL       :         : 5A        : N              
 VCCIO5A                      : AB24      : power  :                   : 3.3V    : 5A        :                
 RESERVED_INPUT               : AB25      :        :                   :         : 5A        :                
-RESERVED_INPUT               : AB26      :        :                   :         : 5A        :                
+dbg_IR[13]                   : AB26      : output : 3.3-V LVTTL       :         : 5A        : N              
 clock                        : AB27      : input  : 3.3-V LVTTL       :         : 5B        : N              
 RESERVED_INPUT               : AB28      :        :                   :         : 5B        :                
 GND                          : AB29      : gnd    :                   :         :           :                
@@ -185,14 +185,14 @@ RESERVED_INPUT               : AC14      :        :                   :         
 VCCPD3B4A                    : AC15      : power  :                   : 3.3V    : 3B, 4A    :                
 GND                          : AC16      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AC17      : power  :                   : 3.3V    : 3B, 4A    :                
-dbg_PC[2]                    : AC18      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[3]                   : AC18      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
 VCCPD3B4A                    : AC19      : power  :                   : 3.3V    : 3B, 4A    :                
-dbg_AC[8]                    : AC20      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[3]                   : AC20      : output : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AC21      : power  :                   : 3.3V    : 4A        :                
-dbg_IR[15]                   : AC22      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[0]                    : AC23      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_PC[7]                    : AC22      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_PC[2]                    : AC23      : output : 3.3-V LVTTL       :         : 4A        : N              
 VREFB5AN0                    : AC24      : power  :                   :         : 5A        :                
-dbg_MD[14]                   : AC25      : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_NMA[4]                   : AC25      : output : 3.3-V LVTTL       :         : 5A        : N              
 GND                          : AC26      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AC27      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AC28      :        :                   :         : 5B        :                
@@ -214,17 +214,17 @@ VCCIO3B                      : AD13      : power  :                   : 3.3V    
 RESERVED_INPUT               : AD14      :        :                   :         : 3B        :                
 DNU                          : AD15      :        :                   :         :           :                
 VCCPD3B4A                    : AD16      : power  :                   : 3.3V    : 3B, 4A    :                
-dbg_MD[10]                   : AD17      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[8]                    : AD17      : output : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AD18      : power  :                   : 3.3V    : 4A        :                
-IO_DATA[8]                   : AD19      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[13]                  : AD20      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[5]                    : AD21      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[0]                   : AD19      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[7]                   : AD20      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[10]                  : AD21      : output : 3.3-V LVTTL       :         : 4A        : N              
 VCC_AUX                      : AD22      : power  :                   : 2.5V    :           :                
 GND                          : AD23      : gnd    :                   :         :           :                
-IO_ADDR[0]                   : AD24      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[12]                   : AD25      : output : 3.3-V LVTTL       :         : 5A        : N              
+RESERVED_INPUT               : AD24      :        :                   :         : 4A        :                
+dbg_MD[14]                   : AD25      : output : 3.3-V LVTTL       :         : 5A        : N              
 RESERVED_INPUT               : AD26      :        :                   :         : 5A        :                
-IO_READ                      : AD27      : output : 3.3-V LVTTL       :         : 5A        : N              
+IO_ADDR[4]                   : AD27      : output : 3.3-V LVTTL       :         : 5A        : N              
 VCCIO5A                      : AD28      : power  :                   : 3.3V    : 5A        :                
 RESERVED_INPUT               : AD29      :        :                   :         : 5B        :                
 RESERVED_INPUT               : AD30      :        :                   :         : 5B        :                
@@ -243,18 +243,18 @@ RESERVED_INPUT               : AE12      :        :                   :         
 RESERVED_INPUT               : AE13      :        :                   :         : 3B        :                
 RESERVED_INPUT               : AE14      :        :                   :         : 3B        :                
 VCCIO3B                      : AE15      : power  :                   : 3.3V    : 3B        :                
-dbg_PC[4]                    : AE16      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[7]                    : AE17      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[1]                   : AE18      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[1]                    : AE19      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[3]                    : AE16      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_ADDR[3]                   : AE17      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_WRITE                     : AE18      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[0]                    : AE19      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AE20      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AE21      : power  :                   : 3.3V    : 3B, 4A    :                
-IO_DATA[2]                   : AE22      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[11]                  : AE23      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-dbg_IR[1]                    : AE24      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[5]                   : AE22      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[7]                    : AE23      : output : 3.3-V LVTTL       :         : 4A        : N              
+RESERVED_INPUT               : AE24      :        :                   :         : 4A        :                
 VCCIO4A                      : AE25      : power  :                   : 3.3V    : 4A        :                
-IO_WRITE                     : AE26      : output : 3.3-V LVTTL       :         : 5A        : N              
-RESERVED_INPUT               : AE27      :        :                   :         : 5A        :                
+dbg_IR[8]                    : AE26      : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_IR[5]                    : AE27      : output : 3.3-V LVTTL       :         : 5A        : N              
 RESERVED_INPUT               : AE28      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AE29      :        :                   :         : 5B        :                
 VCCIO5B                      : AE30      : power  :                   : 3.3V    : 5B        :                
@@ -271,19 +271,19 @@ RESERVED_INPUT               : AF10      :        :                   :         
 RESERVED_INPUT               : AF11      :        :                   :         : 3B        :                
 GND                          : AF12      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF13      :        :                   :         : 3B        :                
-dbg_IR[8]                    : AF14      : output : 3.3-V LVTTL       :         : 3B        : N              
+dbg_IR[9]                    : AF14      : output : 3.3-V LVTTL       :         : 3B        : N              
 RESERVED_INPUT               : AF15      :        :                   :         : 3B        :                
-dbg_IR[6]                    : AF16      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[11]                   : AF16      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AF17      : gnd    :                   :         :           :                
-dbg_PC[0]                    : AF18      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[6]                   : AF19      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_FETCH                    : AF20      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[8]                    : AF18      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[14]                   : AF19      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[4]                   : AF20      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
 IO_DATA[9]                   : AF21      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AF22      : power  :                   : 3.3V    : 4A        :                
-dbg_MD[11]                   : AF23      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_IR[2]                    : AF24      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[12]                   : AF25      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_PC[7]                    : AF26      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[15]                   : AF23      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[12]                   : AF24      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[6]                    : AF25      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_PC[3]                    : AF26      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AF27      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF28      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AF29      :        :                   :         : 5A        :                
@@ -302,19 +302,19 @@ RESERVED_INPUT               : AG11      :        :                   :         
 RESERVED_INPUT               : AG12      :        :                   :         : 3B        :                
 RESERVED_INPUT               : AG13      :        :                   :         : 3B        :                
 GND                          : AG14      : gnd    :                   :         :           :                
-dbg_IR[5]                    : AG15      : output : 3.3-V LVTTL       :         : 3B        : N              
-dbg_PC[1]                    : AG16      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_PC[8]                    : AG17      : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[10]                  : AG18      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_PC[6]                    : AG15      : output : 3.3-V LVTTL       :         : 3B        : N              
+dbg_PC[8]                    : AG16      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[3]                    : AG17      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[12]                   : AG18      : output : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AG19      : power  :                   : 3.3V    : 4A        :                
-IO_DATA[3]                   : AG20      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-IO_ADDR[9]                   : AG21      : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[1]                   : AG22      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[4]                   : AG23      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[14]                  : AG20      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[1]                    : AG21      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[11]                  : AG22      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[3]                    : AG23      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-dbg_AC[11]                   : AG25      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[15]                   : AG26      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[8]                    : AG27      : output : 3.3-V LVTTL       :         : 5A        : N              
+IO_DATA[7]                   : AG25      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[8]                   : AG26      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[6]                    : AG27      : output : 3.3-V LVTTL       :         : 5A        : N              
 RESERVED_INPUT               : AG28      :        :                   :         : 5A        :                
 VCCIO5A                      : AG29      : power  :                   : 3.3V    : 5A        :                
 RESERVED_INPUT               : AG30      :        :                   :         : 5A        :                
@@ -331,22 +331,22 @@ RESERVED_INPUT               : AH10      :        :                   :         
 GND                          : AH11      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AH12      :        :                   :         : 3B        :                
 RESERVED_INPUT               : AH13      :        :                   :         : 3B        :                
-IO_ADDR[7]                   : AH14      : output : 3.3-V LVTTL       :         : 3B        : N              
-dbg_IR[7]                    : AH15      : output : 3.3-V LVTTL       :         : 3B        : N              
+RESERVED_INPUT               : AH14      :        :                   :         : 3B        :                
+RESERVED_INPUT               : AH15      :        :                   :         : 3B        :                
 VCCIO4A                      : AH16      : power  :                   : 3.3V    : 4A        :                
-dbg_MD[6]                    : AH17      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_PC[9]                    : AH18      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[10]                   : AH19      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[4]                    : AH20      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[13]                   : AH17      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[12]                   : AH18      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[15]                   : AH19      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_ADDR[1]                   : AH20      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AH21      : gnd    :                   :         :           :                
-dbg_NMA[5]                   : AH22      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[0]                   : AH22      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
 dbg_AC[9]                    : AH23      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[3]                   : AH24      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[4]                    : AH25      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[8]                   : AH24      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[10]                  : AH25      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AH26      : power  :                   : 3.3V    : 4A        :                
-dbg_AC[13]                   : AH27      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[2]                    : AH28      : output : 3.3-V LVTTL       :         : 5A        : N              
-dbg_MD[1]                    : AH29      : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_PC[5]                    : AH27      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_FETCH                    : AH28      : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_MD[10]                   : AH29      : output : 3.3-V LVTTL       :         : 5A        : N              
 RESERVED_INPUT               : AH30      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AJ1       :        :                   :         : 3A        :                
 RESERVED_INPUT               : AJ2       :        :                   :         : 3A        :                
@@ -356,27 +356,27 @@ RESERVED_INPUT               : AJ5       :        :                   :         
 RESERVED_INPUT               : AJ6       :        :                   :         : 3B        :                
 RESERVED_INPUT               : AJ7       :        :                   :         : 3B        :                
 VCCIO3B                      : AJ8       : power  :                   : 3.3V    : 3B        :                
-IO_ADDR[8]                   : AJ9       : output : 3.3-V LVTTL       :         : 3B        : N              
+RESERVED_INPUT               : AJ9       :        :                   :         : 3B        :                
 RESERVED_INPUT               : AJ10      :        :                   :         : 3B        :                
 RESERVED_INPUT               : AJ11      :        :                   :         : 3B        :                
-IO_ADDR[5]                   : AJ12      : output : 3.3-V LVTTL       :         : 3B        : N              
+RESERVED_INPUT               : AJ12      :        :                   :         : 3B        :                
 VCCIO3B                      : AJ13      : power  :                   : 3.3V    : 3B        :                
-dbg_PC[6]                    : AJ14      : output : 3.3-V LVTTL       :         : 3B        : N              
+IO_ADDR[10]                  : AJ14      : output : 3.3-V LVTTL       :         : 3B        : N              
 VREFB3BN0                    : AJ15      : power  :                   :         : 3B        :                
-dbg_IR[9]                    : AJ16      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_MD[5]                    : AJ17      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[7]                    : AJ16      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[11]                   : AJ17      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AJ18      : gnd    :                   :         :           :                
-dbg_MD[9]                    : AJ19      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[10]                  : AJ20      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[3]                    : AJ21      : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[12]                  : AJ22      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+IO_ADDR[0]                   : AJ19      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[11]                   : AJ20      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[1]                   : AJ21      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[4]                    : AJ22      : output : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AJ23      : power  :                   : 3.3V    : 4A        :                
-IO_ADDR[2]                   : AJ24      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[5]                    : AJ24      : output : 3.3-V LVTTL       :         : 4A        : N              
 resetn                       : AJ25      : input  : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[15]                   : AJ26      : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[0]                   : AJ27      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[1]                    : AJ26      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[5]                    : AJ27      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AJ28      : gnd    :                   :         :           :                
-dbg_IR[12]                   : AJ29      : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_PC[9]                    : AJ29      : output : 3.3-V LVTTL       :         : 5A        : N              
 GND                          : AJ30      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AK2       :        :                   :         : 3B        :                
 RESERVED_INPUT               : AK3       :        :                   :         : 3B        :                
@@ -388,24 +388,24 @@ RESERVED_INPUT               : AK8       :        :                   :         
 RESERVED_INPUT               : AK9       :        :                   :         : 3B        :                
 VCCIO3B                      : AK10      : power  :                   : 3.3V    : 3B        :                
 RESERVED_INPUT               : AK11      :        :                   :         : 3B        :                
-RESERVED_INPUT               : AK12      :        :                   :         : 3B        :                
+IO_ADDR[9]                   : AK12      : output : 3.3-V LVTTL       :         : 3B        : N              
 RESERVED_INPUT               : AK13      :        :                   :         : 3B        :                
 RESERVED_INPUT               : AK14      :        :                   :         : 3B        :                
 GND                          : AK15      : gnd    :                   :         :           :                
-dbg_PC[3]                    : AK16      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[0]                    : AK16      : output : 3.3-V LVTTL       :         : 4A        : N              
 VREFB4AN0                    : AK17      : power  :                   :         : 4A        :                
-IO_DATA[7]                   : AK18      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-dbg_IR[10]                   : AK19      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[2]                    : AK18      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[9]                    : AK19      : output : 3.3-V LVTTL       :         : 4A        : N              
 VCCIO4A                      : AK20      : power  :                   : 3.3V    : 4A        :                
-dbg_NMA[2]                   : AK21      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[9]                   : AK22      : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[6]                    : AK23      : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[4]                   : AK24      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[6]                    : AK21      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[2]                    : AK22      : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[12]                  : AK23      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[13]                   : AK24      : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : AK25      : gnd    :                   :         :           :                
-IO_DATA[15]                  : AK26      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[14]                  : AK27      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[0]                    : AK28      : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[5]                   : AK29      : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[1]                   : AK26      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[10]                   : AK27      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_MD[2]                    : AK28      : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[6]                   : AK29      : output : 3.3-V LVTTL       :         : 4A        : N              
 RESERVED_INPUT               : B1        :        :                   :         : 8A        :                
 RESERVED_INPUT               : B2        :        :                   :         : 8A        :                
 RESERVED_INPUT               : B3        :        :                   :         : 8A        :                
@@ -901,9 +901,9 @@ GND                          : V12       : gnd    :                   :         
 VCC                          : V13       : power  :                   : 1.1V    :           :                
 GND                          : V14       : gnd    :                   :         :           :                
 VCC                          : V15       : power  :                   : 1.1V    :           :                
-IO_ADDR[6]                   : V16       : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_NMA[7]                   : V17       : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_AC[2]                    : V18       : output : 3.3-V LVTTL       :         : 4A        : N              
+IO_ADDR[7]                   : V16       : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[0]                    : V17       : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[5]                   : V18       : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : V19       : gnd    :                   :         :           :                
 RESERVED_INPUT               : V20       :        :                   :         : 6B        :                
 GND                          : V21       : gnd    :                   :         :           :                
@@ -930,14 +930,14 @@ GND                          : W11       : gnd    :                   :         
 VCC                          : W12       : power  :                   : 1.1V    :           :                
 GND                          : W13       : gnd    :                   :         :           :                
 VCC                          : W14       : power  :                   : 1.1V    :           :                
-dbg_IR[3]                    : W15       : output : 3.3-V LVTTL       :         : 3B        : N              
-dbg_IR[13]                   : W16       : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_ADDR[10]                  : W17       : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_IR[10]                   : W15       : output : 3.3-V LVTTL       :         : 3B        : N              
+IO_READ                      : W16       : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_AC[1]                    : W17       : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : W18       : gnd    :                   :         :           :                
-dbg_AC[14]                   : W19       : output : 3.3-V LVTTL       :         : 4A        : N              
-dbg_IR[11]                   : W20       : output : 3.3-V LVTTL       :         : 5A        : N              
-RESERVED_INPUT               : W21       :        :                   :         : 5A        :                
-dbg_IR[14]                   : W22       : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_NMA[2]                   : W19       : output : 3.3-V LVTTL       :         : 4A        : N              
+dbg_PC[1]                    : W20       : output : 3.3-V LVTTL       :         : 5A        : N              
+IO_ADDR[8]                   : W21       : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_IR[4]                    : W22       : output : 3.3-V LVTTL       :         : 5A        : N              
 VCCIO5A                      : W23       : power  :                   : 3.3V    : 5A        :                
 RESERVED_INPUT               : W24       :        :                   :         : 5A        :                
 RESERVED_INPUT               : W25       :        :                   :         : 5B        :                
@@ -961,15 +961,15 @@ GND                          : Y12       : gnd    :                   :         
 VCC                          : Y13       : power  :                   : 1.1V    :           :                
 GND                          : Y14       : gnd    :                   :         :           :                
 GND                          : Y15       : gnd    :                   :         :           :                
-IO_ADDR[3]                   : Y16       : output : 3.3-V LVTTL       :         : 3B        : N              
-dbg_NMA[8]                   : Y17       : output : 3.3-V LVTTL       :         : 4A        : N              
-IO_DATA[6]                   : Y18       : bidir  : 3.3-V LVTTL       :         : 4A        : N              
-IO_ADDR[1]                   : Y19       : output : 3.3-V LVTTL       :         : 4A        : N              
+RESERVED_INPUT               : Y16       :        :                   :         : 3B        :                
+IO_DATA[6]                   : Y17       : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+IO_DATA[13]                  : Y18       : bidir  : 3.3-V LVTTL       :         : 4A        : N              
+dbg_NMA[9]                   : Y19       : output : 3.3-V LVTTL       :         : 4A        : N              
 GND                          : Y20       : gnd    :                   :         :           :                
-dbg_MD[3]                    : Y21       : output : 3.3-V LVTTL       :         : 5A        : N              
+dbg_PC[4]                    : Y21       : output : 3.3-V LVTTL       :         : 5A        : N              
 VCCA_FPLL                    : Y22       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT               : Y23       :        :                   :         : 5A        :                
-RESERVED_INPUT               : Y24       :        :                   :         : 5A        :                
+IO_ADDR[5]                   : Y24       : output : 3.3-V LVTTL       :         : 5A        : N              
 GND                          : Y25       : gnd    :                   :         :           :                
 RESERVED_INPUT               : Y26       :        :                   :         : 5B        :                
 RESERVED_INPUT               : Y27       :        :                   :         : 5B        :                
