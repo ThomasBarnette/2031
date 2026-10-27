@@ -198,6 +198,7 @@ Check3:
     ADDI 1
     STORE Score
     LOAD Random
+	OUT Hex1
     JNZ TAKE_TURN
     JUMP WAIT_SWITCHES_DOWN
     

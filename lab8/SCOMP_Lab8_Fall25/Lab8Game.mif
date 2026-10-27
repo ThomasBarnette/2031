@@ -1,0 +1,170 @@
+WIDTH=16;
+DEPTH=2048;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+0000: 581D; -- JUMP RESET
+0001: 0890; --     LOAD Value1
+0002: 3897; --     AND Mask
+0003: 1092; --     STORE Temp
+0004: 0891; --     LOAD Value2
+0005: 3897; --     AND Mask
+0006: 1093; --     STORE Temp2
+0007: 0892; --     LOAD Temp
+0008: 2893; --     SUB Temp2
+0009: 600C; --     JNEG Second
+000A: 0892; --     LOAD Temp
+000B: 8800; --     RETURN
+000C: 0893; --     LOAD Temp2
+000D: 8800; --     RETURN
+000E: 9000; --     IN Switches
+000F: 9801; --     OUT LEDs
+0010: 8800; --     RETURN
+0011: 088F; --     LOAD Score
+0012: 9805; --     OUT Hex2
+0013: 8800; --     RETURN
+0014: 9002; --     IN Timer
+0015: 379C; --     ADDI -100
+0016: 6018; --     JNEG go
+0017: 588A; --     JUMP GAME_END
+0018: 8800; --     RETURN
+0019: 800E; -- 	CALL Display_switches
+001A: 8011; --     CALL Display_score
+001B: 8014; --     CALL Countdown
+001C: 8800; --     RETURN
+001D: 0894; --     LOAD Zero
+001E: 9801; --     OUT LEDs
+001F: 108E; --     STORE Random
+0020: 108F; --     STORE Score
+0021: 9802; --     OUT Timer
+0022: 0895; --     LOAD Blank
+0023: 9804; --     OUT Hex1
+0024: 9805; --     OUT Hex2
+0025: 5826; --     JUMP WAIT_SWITCHES_DOWN
+0026: 8019; --     CALL Constants
+0027: 9000; --     IN Switches
+0028: 7826; --     JNZ WAIT_SWITCHES_DOWN
+0029: 582A; --     JUMP RANDOM_CALC
+002A: 8019; --     CALL Constants
+002B: 088E; -- 	LOAD Random
+002C: 3001; --     ADDI 1
+002D: 108E; --     STORE Random
+002E: 9000; --     IN Switches
+002F: 3898; --     AND Bit9
+0030: 7832; --     JNZ TAKE_TURN
+0031: 582A; --     JUMP RANDOM_CALC
+0032: 8019; --     CALL Constants
+0033: 088E; --     LOAD Random
+0034: 9804; --     OUT Hex1
+0035: 088E; --     LOAD Random
+0036: 3897; --     AND Mask
+0037: 1090; --     STORE Value1
+0038: 088E; --     LOAD Random
+0039: 5014; --     SHIFT -4
+003A: 3897; --     AND Mask
+003B: 1091; --     STORE Value2
+003C: 8001; --     CALL HigherNibble
+003D: 1096; --     STORE Max
+003E: 0896; --     LOAD Max
+003F: 1090; --     STORE Value1
+0040: 088E; --     LOAD Random
+0041: 5018; --     SHIFT -8
+0042: 3897; --     AND Mask
+0043: 1091; --     STORE Value2
+0044: 8001; --     CALL HigherNibble
+0045: 1096; --     STORE Max
+0046: 0896; --     LOAD Max
+0047: 1090; --     STORE Value1
+0048: 088E; --     LOAD Random
+0049: 501C; --     SHIFT -12
+004A: 3897; --     AND Mask
+004B: 1091; --     STORE Value2
+004C: 8001; --     CALL HigherNibble
+004D: 1096; --     STORE Max
+004E: 584F; --     JUMP CHECK_INPUT
+004F: 8019; --     CALL Constants
+0050: 9000; --     IN Switches
+0051: 3899; --     AND Bit0
+0052: 705C; --     JZERO Check1
+0053: 088E; --     LOAD Random
+0054: 3897; --     AND Mask
+0055: 705C; --     JZERO Check1
+0056: 2896; --     SUB Max
+0057: 788A; --     JNZ GAME_END
+0058: 088E; --     LOAD Random
+0059: 389D; --     AND Clear0
+005A: 108E; --     STORE Random
+005B: 5883; --     JUMP ADD_SCORE
+005C: 9000; --     IN Switches
+005D: 389A; --     AND Bit1
+005E: 7069; --     JZERO Check2
+005F: 088E; --     LOAD Random
+0060: 5014; --     SHIFT -4
+0061: 3897; --     AND Mask
+0062: 7069; --     JZERO Check2
+0063: 2896; --     SUB Max
+0064: 788A; --     JNZ GAME_END
+0065: 088E; --     LOAD Random
+0066: 389E; --     AND Clear1
+0067: 108E; --     STORE Random
+0068: 5883; --     JUMP ADD_SCORE
+0069: 9000; --     IN Switches
+006A: 389B; --     AND Bit2
+006B: 7076; --     JZERO Check3
+006C: 088E; --     LOAD Random
+006D: 5018; --     SHIFT -8
+006E: 3897; --     AND Mask
+006F: 7076; --     JZERO Check3
+0070: 2896; --     SUB Max
+0071: 788A; --     JNZ GAME_END
+0072: 088E; --     LOAD Random
+0073: 389F; --     AND Clear2
+0074: 108E; --     STORE Random
+0075: 5883; --     JUMP ADD_SCORE
+0076: 9000; --     IN Switches
+0077: 389C; --     AND Bit3
+0078: 704F; --     JZERO CHECK_INPUT
+0079: 088E; --     LOAD Random
+007A: 501C; --     SHIFT -12
+007B: 3897; --     AND Mask
+007C: 704F; --     JZERO CHECK_INPUT
+007D: 2896; --     SUB Max
+007E: 788A; --     JNZ GAME_END
+007F: 088E; --     LOAD Random
+0080: 38A0; --     AND Clear3
+0081: 108E; --     STORE Random
+0082: 5883; --     JUMP ADD_SCORE
+0083: 088F; --     LOAD Score
+0084: 3001; --     ADDI 1
+0085: 108F; --     STORE Score
+0086: 088E; --     LOAD Random
+0087: 9804; -- 	OUT Hex1
+0088: 7832; --     JNZ TAKE_TURN
+0089: 5826; --     JUMP WAIT_SWITCHES_DOWN
+008A: 0895; --     LOAD Blank
+008B: 9804; --     OUT Hex1
+008C: 8011; --     CALL Display_score
+008D: 588D; --     JUMP END_LOOP
+008E: 0000; -- Random: DW 0
+008F: 0000; -- Score: DW 0
+0090: 0000; -- Value1: DW 0
+0091: 0000; -- Value2: DW 0
+0092: 0000; -- Temp: DW 0
+0093: 0000; -- Temp2: DW 0
+0094: 0000; -- Zero: DW 0
+0095: FFFF; -- Blank: DW &HFFFF
+0096: 0000; -- Max:   DW 0
+0097: 000F; -- Mask: DW &H000F
+0098: 0200; -- Bit9:      DW &B1000000000
+0099: 0001; -- Bit0: DW &H0001
+009A: 0002; -- Bit1: DW &H0002
+009B: 0004; -- Bit2: DW &H0004
+009C: 0008; -- Bit3: DW &H0008
+009D: FFF0; -- Clear0: DW &HFFF0
+009E: FF0F; -- Clear1: DW &HFF0F
+009F: F0FF; -- Clear2: DW &HF0FF
+00A0: 0FFF; -- Clear3: DW &H0FFF
+[00A1..07FF] : 0000; -- [empty memory]
+END;
